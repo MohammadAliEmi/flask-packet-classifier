@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packet Capture</title>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+<body>
+    <h1>Packet Capture</h1>
+    <button id="startCapture">Start Capture</button>
+    <h2>Captured Packets</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Protocol</th>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Source Port</th>
+                <th>Destination Port</th>
+            </tr>
+        </thead>
+        <tbody id="packetList">
+            <!-- Packet data will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+</body>
+</html>
